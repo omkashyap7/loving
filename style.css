@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: #0e171f; */
+    /* background-color: rgb(223, 187, 193); */
+}
+
+/* header css */
+header {
+    
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 25%;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid black;
+    background: #0e141f;
+    position: fixed;
+}
+
+
+.navlist {
+    display: flex;
+}
+
+.navlist li {
+    list-style: none;
+    transition: ease .40s;
+    
+}
+
+.navlist a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(30, 29, 44);
+    border-radius: 10px;
+    font-weight: 500;
+    color: orangered;
+    border: 1px solid white;
+}
+
+.navlist a:hover {
+    color: rgb(20, 255, 16);
+    
+
+}
+
+.navlist li:hover {
+    transform: scale(1.2);
+
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+
+}
+
+.logo {
+    transition: ease .40s;
+}
+
+.logo:hover {
+
+    transform: scale(1.2);
+}
+
+.logo a:hover {
+    color: rgb(255, 21, 21);
+}
+
+.story{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 100px 25%;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.image img{
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    border-radius: 100%;
+}
+
+/* biography */
+.biography{
+    padding: 0px 25%;
+    
+}
+.bio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 2rem;
+    border-top: 1px so/lid black;
+    
+
+}
+.bio-logo{
+    padding: 20px 5%;
+    transition: ease .40s;
+}
+.bio-logo h3{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: orangered;
+}
+.bio-logo p{
+    color: gray;
+}
+.bio-logo:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+    border-radius: 12px;
+    transform: scale(1);
+}
+
+.aboutprogram{
+    padding: 0px 25%;
+}
+.sub-program img{
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+.program{
+    padding: 0px 5%;
+    transition: ease .40s;
+    margin-top: 2rem;
+}
+.program:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+    border-radius: 12px;
+    transform: scale(1);
+}
+.program h3{
+    font-weight: 500;
+    color: orangered;
+}
+.program p{
+    color:  gray;
+}
+.social{
+    
+    display: flex;
+   margin-top: 50px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #0e141f;
+    padding: 0px 28%;
+    align-items: center;
+    text-align: center;
+}
+.pic img{
+    max-width: 50%;
+    width: 80px;
+    height: auto;
+    filter: invert(1);
+}
+.s-social ul{
+    display: flex;
+    
+}
+.s-social li{
+    list-style: none;
+    padding-right: 10px;
+    font-size: 25px;
+    
+}
+.s-social a{
+    color: rgb(255, 134, 90);
+   
+}
+.s-social li{
+    transition: ease .40s;
+}
+.s-social li:hover{
+    transform: translateY(-10px);
+    
+}
+
+.flow{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    padding: 10px 28%;
+    grid-gap: 3rem;
+}
+.item{
+    color: gray;
+    padding: 10px 10px 10px 10px;
+    transition: ease .40s;
+}
+.item:hover{
+    transform: scale(1);
+}
+.item h4{
+    color: orangered;
+    font-weight: 500;
+    
+}
+
+.item:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+    border-radius: 8px;
+}
+#dev{
+    text-align: center;
+    padding: 10px;
+}
+
+/* responsiveness */
+
+@media (max-width: 430px){
+    header{
+        padding: 25px 5%;
+    }
+    .image img{
+       
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+    .social li{
+        margin-left: 15px;
+    }
+    
+}
